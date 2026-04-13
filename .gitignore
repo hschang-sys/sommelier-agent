@@ -1,0 +1,54 @@
+# ─── 인증 / API 키 ───────────────────────────────
+.env
+.env.*
+*.key
+*.pem
+*.credentials
+.credentials.json
+secrets/
+
+# ─── Claude Code 로컬 전용 파일 ──────────────────
+# *.local.md : 로컬 머신에만 적용되는 hookify 설정
+*.local.md
+# settings.local.json : 개인 Claude 설정 오버라이드
+.claude/settings.local.json
+# 세션·히스토리·캐시
+.claude/sessions/
+.claude/cache/
+.claude/history.jsonl
+.claude/telemetry/
+.claude/shell-snapshots/
+.claude/file-history/
+
+# ─── MCP 관련 ────────────────────────────────────
+# MCP 인증 캐시 (토큰 포함 가능)
+mcp-needs-auth-cache.json
+.mcp-auth/
+
+# ─── OS 생성 파일 ────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ─── 에디터 ──────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Python ──────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ─── Node.js ─────────────────────────────────────
+node_modules/
+dist/
+.next/
+
+# ─── 로그 / 임시 파일 ────────────────────────────
+*.log
+*.tmp
+*.bak
